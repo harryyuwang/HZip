@@ -1,4 +1,4 @@
-package com.tr;
+package com.tr.hadoop.hdfs.tool;
 
 import java.io.*;
 import java.net.URI;

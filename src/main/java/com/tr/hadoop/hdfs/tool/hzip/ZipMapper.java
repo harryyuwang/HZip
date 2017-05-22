@@ -1,4 +1,4 @@
-package com.tr.hzip;
+package com.tr.hadoop.hdfs.tool.hzip;
 
 import java.io.*;
 
