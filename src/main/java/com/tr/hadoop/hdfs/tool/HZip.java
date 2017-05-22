@@ -38,7 +38,7 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 import org.apache.hadoop.util.GenericOptionsParser;
 
-import com.tr.hzip.*;
+import com.tr.hadoop.hdfs.tool.hzip.*;
 
 public class HZip extends Configured implements Tool {
 
