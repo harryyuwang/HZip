@@ -78,6 +78,10 @@ $ hadoop jar HZip-0.2.3-SNAPSHOT.jar -Dhzip.delete=true unzip hdfs:///user/hadoo
 ## Combined Splits
 In order to make the zip operation work efficiently with huge number of small files on HDFS, option *hzip.combine* is provided which tells the mapreduce job to use a customized CombineFileInputFormat class to combine blocks from different files on the same data node to form a single input split. As a result, it will dramastically reduce the number of mapper tasks required to launch, so very useful if the amount of small files being zipped is really huge.
 
+References:
+- https://hadoop.apache.org/docs/r3.0.0-alpha2/api/org/apache/hadoop/mapred/lib/CombineFileInputFormat.html
+- https://www.ibm.com/developerworks/library/bd-hadoopcombine/
+
 For instance, if running a zip command with *hzip.combine* set on 4 small files under the HDFS folder *smallFiles*, like:
 
 ```
